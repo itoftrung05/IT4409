@@ -3,100 +3,80 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ngày hội Công nghệ Xanh 2026 - Blakletterpress</title>
+	<title>Blakletterpress - Your online source of trusted news</title>
+	<meta name="description" content="Blakletterpress - nguồn tin tức trực tuyến đáng tin cậy: tin sự kiện công nghệ, blog và bản tin định kỳ dành cho sinh viên.">
+	<meta property="og:title" content="Blakletterpress - Your online source of trusted news">
+	<meta property="og:description" content="Nguồn tin tức trực tuyến đáng tin cậy dành cho sinh viên.">
+	<meta property="og:image" content="https://trung-it4409.id.vn/images/hoi-truong.jpg">
+	<link rel="canonical" href="https://trung-it4409.id.vn/index_new.html">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-	<div id="header">
+	<header id="header">
 		<div>
 			<a href="index.html" class="brand">Blakletterpress</a>
 			<a href="index.html" id="logo" aria-label="Blakletterpress – trang chủ">BLP</a>
 			<p class="tagline">Your online source of trusted news</p>
-			<form action="index.html">
-				<input type="text" placeholder="Enter search query" class="txtfield">
+			<form action="index.html" role="search">
+				<label for="q" hidden>Tìm kiếm</label>
+				<input type="search" id="q" name="q" placeholder="Enter search query" class="txtfield">
 				<input type="submit" value="Search" class="button">
 			</form>
 		</div>
-	</div>
+	</header>
 	<div id="body">
 		<div>
-			<div id="sidebar">
+			<aside id="sidebar">
+				<nav aria-label="Menu chính">
 				<ul id="navigation">
-					<li><a href="index.html">Home</a></li>
+					<li class="selected"><a href="index.html">Home</a></li>
 					<li><a href="index.html#about">About</a></li>
-					<li class="selected"><a href="media.html">News</a></li>
+					<li><a href="media.html">News</a></li>
 					<li><a href="register.html">Blog</a></li>
 				</ul>
-				<div class="connect">
-					<h3>Connect with us:</h3>
+				</nav>
+				<section class="connect">
+					<h2>Connect with us:</h2>
 					<div class="icons">
 						<a href="#" class="twitter" aria-label="Twitter">t</a>
 						<a href="#" class="facebook" aria-label="Facebook">f</a>
 						<a href="#" class="googleplus" aria-label="Google+">g+</a>
 					</div>
-				</div>
-				<div class="section">
-					<h3>Placeholder</h3>
-					<h4>Title Sample One</h4>
+				</section>
+				<section class="section">
+					<h2>Placeholder</h2>
+					<h3>Title Sample One</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ligula vel velit varius</p>
 					<a href="#" class="read">Read more</a>
-					<h4>Title Sample One</h4>
+					<h3>Title Sample One</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ligula vel velit varius</p>
 					<a href="#" class="read">Read more</a>
 					<a href="#" class="more">View More</a>
-				</div>
-			</div>
+				</section>
+			</aside>
 			<main id="content">
-				<article>
-					<header>
-						<h1>Ngày hội Công nghệ Xanh 2026</h1>
-						<p class="meta"><time datetime="2026-04-22">22/04/2026</time> · Tác giả: <a href="#" rel="author">Ban tổ chức Blakletterpress</a></p>
-					</header>
-					<figure>
-						<img src="images/hoi-truong.jpg" alt="Hội trường chính trong ngày khai mạc sự kiện năm 2025" width="517" height="266">
-						<figcaption>Hội trường chính trong ngày khai mạc sự kiện năm 2025.</figcaption>
-					</figure>
-					<section>
-						<h2>Giới thiệu sự kiện</h2>
-						<p>Ngày hội Công nghệ Xanh 2026 quy tụ các diễn giả và doanh nghiệp theo đuổi giải pháp công nghệ bền vững. Sự kiện gồm chuỗi tọa đàm, khu trưng bày sản phẩm và các buổi kết nối dành cho sinh viên.</p>
-					</section>
-					<section>
-						<h2>Video giới thiệu</h2>
-						<video controls width="517" height="266" poster="images/poster-video.jpg" preload="none">
-							<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-							Trình duyệt của bạn không hỗ trợ thẻ video.
-						</video>
-					</section>
-					<section>
-						<h2>Podcast: Trò chuyện cùng diễn giả</h2>
-						<p>Nghe lại buổi phỏng vấn khách mời chính của chương trình:</p>
-						<audio controls preload="none">
-							<source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
-							Trình duyệt của bạn không hỗ trợ thẻ audio.
-						</audio>
-					</section>
-					<section>
-						<h2>Địa điểm tổ chức</h2>
-						<p>Sự kiện diễn ra tại Hà Nội. Xem bản đồ đường đi bên dưới:</p>
-						<iframe src="https://maps.google.com/maps?q=H%C3%A0%20N%E1%BB%99i&amp;z=9&amp;output=embed" width="520" height="292" style="border:0" loading="lazy" title="Bản đồ Hà Nội" allowfullscreen></iframe>
-					</section>
-					<section>
-						<h2>Hình ảnh các mùa trước</h2>
-						<figure>
-							<img src="images/trung-bay.jpg" alt="Khu trưng bày sản phẩm xanh mùa 2025" width="517" height="318">
-							<figcaption>Khu trưng bày sản phẩm xanh mùa 2025.</figcaption>
-						</figure>
-					</section>
-					<footer class="tags">
-						<p>Chủ đề: <a href="#" rel="tag">công nghệ xanh</a>, <a href="#" rel="tag">phát triển bền vững</a>.</p>
-					</footer>
+				<h1>Welcome to Blakletterpress</h1>
+				<p id="about">Blakletterpress là trang tin tức trực tuyến dành cho sinh viên, cập nhật các sự kiện công nghệ, bài viết blog và thông báo mới nhất.</p>
+				<article class="post">
+					<img src="images/hoi-truong.jpg" alt="Hội trường sự kiện">
+					<h2><a href="media.html">Ngày hội Công nghệ Xanh 2026 sắp khai mạc</a></h2>
+					<p class="date"><time datetime="2026-04-22">22/04/2026</time></p>
+					<p>Sự kiện quy tụ các diễn giả và doanh nghiệp theo đuổi công nghệ bền vững, với chuỗi tọa đàm, khu trưng bày và các buổi kết nối dành cho sinh viên.</p>
+					<a href="media.html">Read more</a>
+				</article>
+				<article class="post">
+					<img src="images/trung-bay.jpg" alt="Khu trưng bày sản phẩm">
+					<h2><a href="register.html">Mở đăng ký nhận bản tin định kỳ</a></h2>
+					<p class="date"><time datetime="2026-04-15">15/04/2026</time></p>
+					<p>Đăng ký để nhận tin tức, bài blog và thông báo sự kiện mới nhất từ Blakletterpress qua email mỗi tuần.</p>
+					<a href="register.html">Read more</a>
 				</article>
 			</main>
 		</div>
 	</div>
-	<div id="footer">
+	<footer id="footer">
 		<div>
 			<ul>
 				<li><span class="icon"><svg width="38" height="38" viewBox="0 0 24 24" fill="#fff"><path d="M12 3 2 11.5l1.3 1.5L5 11.6V21h5.5v-6h3v6H19v-9.4l1.7 1.4 1.3-1.5z"/></svg></span><p>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p></li>
@@ -104,8 +84,8 @@
 				<li><span class="icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M4.5 7.5h15M4.5 16.5h15"/></svg></span><p>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p></li>
 				<li><span class="icon"><svg width="38" height="38" viewBox="0 0 24 24" fill="#fff"><path d="M16.5 2.5l5 5L9 20H4v-5z"/><path d="M14.5 4.5l5 5" stroke="#9a5f22" stroke-width="1.2"/></svg></span><p>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p></li>
 			</ul>
-			<p class="copy">&copy; Copyright &copy; 2011. Company name all rights reserved</p>
+			<p class="copy"><small>&copy; Copyright &copy; 2011. Company name all rights reserved</small></p>
 		</div>
-	</div>
+	</footer>
 </body>
 </html>
