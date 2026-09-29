@@ -1,0 +1,164 @@
+/* ===== Blakletterpress – khung giao diện chung ===== */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 13px; color: #6b4a1e;
+	background-color: #fcc57c;
+	background-image:
+		repeating-linear-gradient(45deg, rgba(255,255,255,.06) 0 2px, transparent 2px 6px),
+		linear-gradient(#ffbf73, #fdc988 700px, #fcc680);
+}
+a { color: #6b4a1e; }
+img { border: 0; }
+
+/* ---------- HEADER ---------- */
+#header { position: relative; height: 142px; }
+#header::before, #header::after {
+	content: ""; position: absolute; left: 0; right: 0; height: 1px; background: #d9a15a;
+}
+#header::before { top: 59px; } #header::after { top: 63px; }
+#header > div { position: relative; width: 860px; margin: 0 auto; height: 100%; z-index: 1; }
+#header .brand {
+	position: absolute; left: 0; top: 30px; margin: 0;
+	font: 22px "UnifrakturMaguntia", serif; color: #7c6a58; text-decoration: none;
+	text-shadow: 1px 1px 0 #fff3dc;
+}
+#logo {
+	position: absolute; left: 50%; top: 18px; transform: translateX(-50%);
+	font: 700 92px/1 "UnifrakturCook", serif; color: #2a0806; text-decoration: none;
+	text-shadow: 2px 3px 0 #b5763a; letter-spacing: -2px;
+}
+#header .tagline {
+	position: absolute; right: 0; top: 40px; margin: 0;
+	font-style: italic; font-weight: bold; font-size: 12px; color: #7c5a36;
+}
+#header form { position: absolute; right: 0; top: 76px; }
+#header .txtfield {
+	width: 155px; height: 22px; border: 1px solid #e3c9a0; padding: 2px 4px;
+	font: italic 12px Georgia, serif; color: #999;
+}
+#header .button, .btn {
+	height: 22px; margin-left: 4px; padding: 0 12px; cursor: pointer;
+	border: 1px solid #1f7a33; border-radius: 2px; color: #fff;
+	font: bold 12px Georgia, serif;
+	background: linear-gradient(#4cc265, #23933b);
+}
+
+/* ---------- BODY ---------- */
+#body > div { width: 860px; margin: 0 auto; display: flex; align-items: flex-start; }
+#sidebar { width: 211px; flex: none; }
+#content {
+	width: 637px; margin-left: 12px; min-height: 600px;
+	background: #fdf6e8; padding: 10px 40px 45px;
+	box-shadow: 0 8px 12px -8px rgba(120,70,20,.35);
+}
+
+/* Menu */
+#navigation {
+	list-style: none; margin: 0; padding: 4px 6px;
+	background: #a36b31; border: 2px solid #8a5424; border-radius: 3px;
+}
+#navigation li { margin: 4px 0 13px; }
+#navigation li:last-child { margin-bottom: 2px; }
+#navigation a {
+	display: block; height: 66px; line-height: 66px; text-align: center;
+	background: radial-gradient(ellipse at center, #4a0f10 0%, #2a0507 70%);
+	color: #fff; text-decoration: none; text-transform: uppercase;
+	font-size: 29px; text-shadow: 0 0 10px #ff9a8a, 0 0 2px #fff;
+}
+#navigation a:hover { background: #5b1414; }
+
+/* Connect */
+.connect {
+	margin-top: 18px; background: #fff0c9; padding: 6px 6px 22px;
+	box-shadow: 0 6px 6px -6px rgba(0,0,0,.4);
+}
+.connect h3, .section h3 {
+	margin: 0; padding: 8px 0; text-align: center;
+	font-size: 19px; font-weight: bold; color: #7a4a14;
+	background: #f4c77c; text-shadow: 1px 1px 0 #fde6b8;
+}
+.connect .icons { display: flex; justify-content: space-around; padding-top: 20px; }
+.connect .icons a {
+	width: 22px; height: 22px; line-height: 22px; text-align: center; border-radius: 3px;
+	color: #fff; font: bold 14px Arial, sans-serif; text-decoration: none;
+}
+.connect .twitter { background: #2da9e1; }
+.connect .facebook { background: #3b5998; }
+.connect .googleplus { background: #dd4b39; }
+
+/* Placeholder */
+.section {
+	margin-top: 28px; background: #f3c26a; padding: 6px 6px 18px;
+	box-shadow: 0 6px 6px -6px rgba(0,0,0,.4);
+}
+.section h3 { background: #c68a2a; color: #6a3a0a; text-shadow: 1px 1px 0 #e0a64a; }
+.section h4 { margin: 18px 6px 4px; color: #fff; font-size: 11px; }
+.section p { margin: 0 6px; line-height: 22px; font-size: 12px; color: #8a5a20; }
+.section .read { display: inline-block; margin: 4px 6px 0; color: #2f8a1f; font-size: 12px; }
+.section .more {
+	display: block; margin: 22px 6px 0; height: 38px; line-height: 36px; text-align: center;
+	border: 1px solid #16662a; border-radius: 3px; text-decoration: none;
+	background: linear-gradient(#5fd06f, #1f8a35 55%, #167a2a);
+	color: #fff; font-size: 24px; font-weight: bold; text-shadow: 1px 2px 2px #0b4a18;
+}
+
+/* Nội dung chính */
+#content h1 { margin: 12px 0 30px; font-size: 29px; font-weight: normal; color: #7a4a14; }
+#content p { line-height: 22px; }
+
+/* ---------- FOOTER ---------- */
+#footer { margin-top: 0; background: #fdd48f; padding: 36px 0 60px; }
+#footer > div { width: 880px; margin: 0 auto; }
+#footer ul { list-style: none; margin: 0; padding: 0 0 40px; display: flex; justify-content: space-between; border-bottom: 5px solid #e3b56e; }
+#footer li { width: 180px; text-align: center; }
+#footer li .icon {
+	display: inline-flex; align-items: center; justify-content: center;
+	width: 68px; height: 68px; border-radius: 50%;
+	background: radial-gradient(circle at 40% 35%, #c88a45, #9a5f22);
+	box-shadow: 0 0 0 2px #e8b776;
+}
+#footer li p { text-align: justify; line-height: 22px; font-size: 12px; margin-top: 22px; color: #6b4a1e; }
+#footer .copy { text-align: center; font: 9px Arial, sans-serif; color: #c89a5a; margin-top: 36px; }
+
+/* ---------- FORM ĐĂNG KÝ (register.html) ---------- */
+#content fieldset { border: 1px solid #b7ad9c; margin: 0 0 8px; padding: 2px 12px 14px; }
+#content legend { color: #1d1208; font-size: 14px; padding: 0 2px; }
+#content form p { margin: 4px 0 26px; color: #5a4a3a; }
+#content input[type=text], #content input[type=email],
+#content input[type=password], #content input[type=tel] {
+	width: 163px; height: 20px; border: 1px solid #888; padding: 1px 3px; font-size: 12px;
+}
+#content input[type=date] { font-size: 11px; }
+#content input.short { width: 67px; height: 20px; }
+#content textarea { width: 291px; height: 61px; font: 11px monospace; }
+#content form .btn { margin: 0 0 0 0; }
+
+/* ---------- TRANG ĐA PHƯƠNG TIỆN (media.html) ---------- */
+#content .meta { color: #6b4a1e; margin-top: -8px; }
+#content .meta a { color: #6b4a1e; }
+#content article h2 { text-align: center; font-size: 18px; color: #111; margin: 26px 0 30px; }
+#content figure { margin: 40px 0 0 37px; }
+#content figure img { display: block; width: 517px; height: auto; }
+#content figcaption { color: #111; margin-top: 4px; font-size: 13px; }
+#content video, #content iframe { display: block; width: 517px; }
+#content video { background: #000; }
+#content audio { display: block; }
+#content .tags { margin-top: 20px; }
+
+/* ---------- TRANG CHỦ ---------- */
+#content .post { overflow: hidden; margin-bottom: 26px; }
+#content .post img { float: left; width: 200px; margin: 4px 16px 6px 0; }
+#content .post h2 { margin: 0 0 6px; font-size: 18px; color: #7a4a14; font-weight: normal; }
+#content .post .date { font-style: italic; color: #a07a4a; font-size: 12px; }
+
+/* ---------- Bổ sung cho index_new.html (bài 5): giữ nguyên hiển thị khi đổi cấp tiêu đề ---------- */
+.connect h2, .section h2 {
+	margin: 0; padding: 8px 0; text-align: center;
+	font-size: 19px; font-weight: bold; color: #7a4a14;
+	background: #f4c77c; text-shadow: 1px 1px 0 #fde6b8;
+}
+.section h2 { background: #c68a2a; color: #6a3a0a; text-shadow: 1px 1px 0 #e0a64a; }
+.section h2 ~ h3 { margin: 18px 6px 4px; color: #fff; font-size: 11px; background: none; padding: 0; text-align: left; text-shadow: none; }
+#footer .copy small { font-size: inherit; }
